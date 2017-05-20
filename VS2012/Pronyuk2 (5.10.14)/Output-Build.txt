@@ -1,0 +1,4 @@
+﻿1>------ Build started: Project: Pronyuk2 (5.10.14), Configuration: Debug Win32 ------
+1>  Source.cpp
+1>  Pronyuk2 (5.10.14).vcxproj -> C:\Users\nshs7-132\Desktop\Pronyuk2 (5.10.14)\Debug\Pronyuk2 (5.10.14).exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

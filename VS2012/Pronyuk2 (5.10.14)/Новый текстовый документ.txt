@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+void main()
+{
+	float A,B,C,D,H;
+	const float y=14,l=20,k=4; 
+	cout<<"Enter UAH..""\n";
+	cin>>A;
+	C=A/14;
+	cout<<"$""=";
+	cout<<C<<"\n";
+	D=A/20;"\n";
+	cout<<"E""=";
+	cout<<D<<"\n";
+		H=A*4;
+			cout<<"RUB""=";
+			cout<<H<<"\n";        //result
+
+
+			int a,b;
+			a=5;
+			b=6;
+			bool c;
+			c=a>b;
+			c=a<b;                           //a>b; a<b; a>=b; a<=b; a==b; a!=b
+			c=a!=b;
+			c=b!=a;

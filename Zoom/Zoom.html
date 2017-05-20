@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+</head>
+<body>
+    <div id="contIMG">
+<img src="img/nature.png" id="hubblepic"/>
+</div>
+<input type="range" min="1" max="5" value="1" step="0.1" id="zoomer" oninput="deepdive()"/>
+    <script>
+        var zoomer = document.getElementById('zoomer');
+        var hubblepic = document.getElementById('hubblepic');
+        function deepdive() {
+            zoomlevel = zoomer.valueAsNumber;
+            hubblepic.style.webkitTransform = "scale(" + zoomlevel + ")";
+            hubblepic.style.mozTransform = "scale(" + zoomlevel + ")";
+            hubblepic.style.transform = "scale(" + zoomlevel + ")";
+        }
+
+
+    </script>
+    <style>
+        .div1 {
+            margin-left: 750px;
+            margin-top: 350px;
+        }
+
+        .div2 {
+            margin-left: 830px;
+            margin-top: 350px;
+        }
+    </style>
+</body>
+</html>

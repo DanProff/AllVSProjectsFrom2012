@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ClassWork[16.05.15]</title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+    <script src="jQuery/jquery-2.1.4.js"></script>
+</head>
+<body>
+    <div style="position: relative;">
+        <div class="d1" id="d1" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d2" id="d2" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d3" id="d3" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d4" id="d4" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d5" id="d5" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d6" id="d6" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d7" id="d7" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d8" id="d8" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d9" id="d9" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d10" id="d10" style="position: absolute;"></div>
+    </div>
+
+
+    <script>
+        setInterval('func1()', 1000);
+        function func1() {
+            $(document).ready(function () {
+                $('#d1').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d2').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d3').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d4').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d5').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d6').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d7').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d8').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d9').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d10').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+            })
+
+        }
+
+    </script>
+</body>
+</html>

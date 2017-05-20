@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+</head>
+<body class="bodyl" style="text-align: center;">
+ <div class="cong" id="congg" style="font-size:70px; display:block;">Вiтаємо на нашому сайтi!</div>
+    <form name="myform" style="position: relative;" class="tt">
+        <table class="t1" style="text-align: center;">
+
+            <tr>
+                <td colspan="2" style="text-align: center;">Форма реєстрацiї </td>
+            </tr>
+            <tr>
+                <td>Придумайте логiн </td>
+                <td>
+                    <input placeholder="Введiть логiн" type="text" name="login" id="login" /></td>
+            </tr>
+            <tr>
+                <td>Пароль</td>
+                <td>
+                    <input placeholder="Введiть пароль" type="password" name="pass" /></td>
+            </tr>
+            <tr>
+                <td>Пiдтвердiть пароль</td>
+                <td>
+                    <input placeholder="Пiдтвердiть пароль" type="password" name="passconf" /></td>
+            </tr>
+        </table>
+        <p>_____________________________________________________________________________________</p>
+        <table class="t2">
+            <tr>
+                <td><u>П.i.Б</u> </td>
+                <td>
+                    <input placeholder="Прiзвище" type="text" name="login" /></td>
+                <td>
+                    <input placeholder="Iм'я" type="text" name="login" /></td>
+                <td>
+                    <input placeholder="По-батьковi " type="text" name="login" /></td>
+            </tr>
+        </table>
+        <table class="t4">
+            <tr>
+                <td><u>Стать:</u> </td>
+            </tr>
+        </table>
+        <input type="radio" name="chck1" />Ч<br />
+        <input type="radio" name="chck1" />Ж<br />
+        <br />
+        <u>Дата народження: (ДД/ММ/РР)</u>
+        <select name="DD">
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04 </option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+        </select>
+        <select name="MM">
+            <option>Сiчень</option>
+            <option>Лютий</option>
+            <option>Березень</option>
+            <option>Квiтень</option>
+            <option>Травень</option>
+            <option>Червень</option>
+            <option>Липень</option>
+            <option>Серпень</option>
+            <option>Вересень</option>
+            <option>Жовтень</option>
+            <option>Листопад</option>
+            <option>Грудень</option>
+        </select>
+        <select name="RR">
+            <option>2014 </option>
+            <option>2013 </option>
+            <option>2012 </option>
+            <option>2011 </option>
+            <option>2010 </option>
+            <option>2009 </option>
+            <option>2008 </option>
+            <option>2007 </option>
+            <option>2006 </option>
+            <option>2005 </option>
+            <option>2004 </option>
+            <option>2003 </option>
+            <option>2002 </option>
+            <option>2001 </option>
+            <option>2000 </option>
+        </select>
+        <br />
+        <br />
+        <p class="langg"><u>Мови:</u></p>
+        <input type="checkbox" checked name="lang" />Українська<br />
+        <input type="checkbox" name="lang" />English<br />
+        <input type="checkbox" name="lang" />Deutsch<br />
+        <input type="checkbox" name="lang" />Русский<br />
+        <input type="checkbox" name="lang" />Francais<br />
+        <p><u>Сфера дiяльностi:</u></p>
+        <select name="sphere">
+            <option>Економiка</option>
+            <option>Логiстика</option>
+            <option>Культура</option>
+            <option>Спорт</option>
+        </select>
+        <p>_____________________________________________________________________________________</p>
+        <u>Ваш e-mail: </u>
+        <input type="text" name="mail" /><select name="mailsel">
+            <option>@mail.ru</option>
+            <option>@gmail.com</option>
+        </select>
+        <p>_____________________________________________________________________________________</p>
+        <p>Дод.iнформацiя: </p>
+        <textarea name="text32">
+
+        </textarea>
+        <p>_____________________________________________________________________________________</p>
+        <div class="butts" id="button">
+            
+            <input type="button" name="buttgo" value="Зареєструватись" id="butt" onclick="good()" />
+
+        </div>
+        <input type="reset" name="resett" value="Скинути" />
+    </form>
+    <script>
+
+
+        function good() {
+            if (document.getElementById('login').value.length <= 4) {
+                alert("В полi логiну має бути що-найменше 5 символiв")
+               
+            }
+           else if (myform.pass.value != myform.passconf.value) {
+               alert("Паролi не спiвпадають!");
+               
+                }
+             else {
+               alert("Ви успiшно зареєструвались!");
+              
+               
+            }
+        
+          
+        }
+        
+
+    </script>
+   
+    <style>
+        .bodyl {
+            font-family: Archangelsk;
+            background-color: beige;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 13px;
+            display:block;
+        }
+
+        .t1 {
+            text-align: center;
+            margin-left: 800px;
+        }
+
+        .t2 {
+            text-align: center;
+            margin-left: 700px;
+        }
+
+        .t3 {
+            text-align: center;
+            margin-left: 600px;
+        }
+
+        .t4 {
+            text-align: center;
+            margin-left: 928px;
+        }
+        .shab {
+            height: 100%;
+            width: 100%;
+        }
+        
+    </style>
+</body>
+</html>

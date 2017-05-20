@@ -1,0 +1,78 @@
+.d1 {
+    height: 300px;
+    width: 100px;
+    background-color: red;
+    bottom:-300px;
+}
+
+.d2 {
+    height: 300px;
+    width: 100px;
+    background-color: green;
+    margin-left: 100px;
+    bottom:-300px;
+}
+
+.d3 {
+    height: 300px;
+    width: 100px;
+    background-color: blue;
+    margin-left: 200px;
+    bottom:-300px;
+}
+
+.d4 {
+    height: 300px;
+    width: 100px;
+    background-color: yellow;
+    margin-left: 300px;
+    bottom:-300px;
+}
+
+.d5 {
+    height: 300px;
+    width: 100px;
+    background-color: purple;
+    margin-left: 400px;
+    bottom:-300px;
+}
+
+.d6 {
+    height: 300px;
+    width: 100px;
+    background-color: darkred;
+    margin-left: 500px;
+    bottom:-300px;
+}
+
+.d7 {
+    height: 300px;
+    width: 100px;
+    background-color: red;
+    margin-left: 600px;
+    bottom:-300px;
+}
+
+.d8 {
+    height: 300px;
+    width: 100px;
+    background-color: green;
+    margin-left: 700px;
+    bottom:-300px;
+}
+
+.d9 {
+    height: 300px;
+    width: 100px;
+    background-color: blue;
+    margin-left: 800px;
+    bottom:-300px;
+}
+
+.d10 {
+    height: 300px;
+    width: 100px;
+    background-color: yellow;
+    margin-left: 900px;
+    bottom:-300px;
+}

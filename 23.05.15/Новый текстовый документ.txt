@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+    <script src="jQuery/jquery-2.1.4.js"></script>
+
+</head>
+<body>
+    <input type="button" value="Show" id="button1" style="position: relative; width: 300px;" />
+    <div class="tip" id="t1" style="display: none; position: relative;">
+        <div id="m1">
+        <div class="c1">Text1 </div>
+        <div class="c2">Text2 </div>
+        <div class="c3">Text3 </div>
+        <div class="c4">Text4 </div>
+            </div>
+    </div>
+    <div class="tip" id="t2" style="display: none; position: relative;"></div>
+    <input type="button" value="Hide" id="button2" style="display: block; width: 300px;" />
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#button1').click(function () {
+                $('div').slideToggle(300);
+
+
+            })
+            $('#button2').click(function () {
+                $('div').slideUp(300);
+                $('div').css("display:", "block;");
+
+            })
+        })
+
+
+    </script>
+</body>
+</html>
+
+
+CSS:
+#button1 {
+    margin-left: 500px;
+}
+
+#t1 {
+    width: 300px;
+    height: 400px;
+    background-color: beige;
+    margin-left: 500px;
+    border: 2px solid black;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+}
+
+#button2 {
+    margin-left: 500px;
+}
+
+.c1 {
+    width: 90px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.c2 {
+    width: 90px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.c3 {
+    width: 90px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.c4 {
+    width: 90px;
+    height: 30px;
+    border: 1px solid black;
+}
+#m1 {
+    margin-left: 100px;
+    margin-top:10px;
+}
+----------------------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+    <script src="jQuery/jquery-2.1.4.js"></script>
+
+</head>
+<body>
+    <img src="images/1.png" />
+    <script>
+        var myPath = new Array("images/1.png", "images/2.png", "images/3.png", "images/4.png", "images/5.png");
+        var counter = 1;
+        var time = 1000;
+        setInterval('changeImg()', 1000);
+        function changeImg() {
+            $('img').fadeOut(time, function () {
+                $(this).attr('src', myPath[counter]).fadeIn(time);
+
+            })
+            counter++;
+            if (counter == myPath.length) counter = 0;
+
+        }
+    </script>
+</body>
+</html>
+------------------------------------------------------------------
+<?yml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//UK" 
+
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/StyleSheet1.css" />
+    <script src="jQuery/jquery-2.1.4.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+<body style="background-color:#11043c">
+    <ul class="menu">
+        <li style="background-color: green"><a href="#">HTML</a></li>
+        <li style="background-color: yellow"><a href="#">CSS</a>
+            <ul style="background-color: yellow;">
+                <li><a href="#">One</a></li>
+            </ul>
+        </li>
+        <li style="background-color: red"><a href="#">JavaScript</a>
+            <ul style="background-color: red;">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+            </ul>
+            </li>
+        <li style="background-color: purple"><a href="#">jQuery</a>
+            <ul style="background-color: purple;"><li><a href=#>Text</a></li></ul>
+        </li>
+        <li style="background-color: orange"><a href="#">C++</a></li>
+    </ul>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu li').hover(
+                function(){
+                    $('ul',this).slideDown(700);
+                },
+            function(){
+                $('ul',this).slideUp(700);
+            });
+        });
+               
+
+    </script>
+</body>
+</html>
+CSS:
+.menu {
+    margin: 200px 100px;
+    font-family:'Comic Sans MS';
+}
+
+    .menu, .menu ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+        .menu li {
+            float: left;
+            position: relative;
+            display: block;
+            z-index: 999;
+            width: 200px;
+            border-radius: 3px;
+        }
+
+            .menu li a {
+                display: block;
+                height: 50px;
+                text-decoration: none;
+                text-align: center;
+                padding-top: 12px;
+                color: black;
+                font-weight: bold;
+                font-size: 30px;
+                border: 2px solid black;
+                transition-duration: 2s;
+            }
+
+        .menu ul {
+            position: absolute;
+            display: none;
+            left: 0px;
+        }
+
+        .menu li hover {
+            background-color: black;
+            font-size: 38px;
+        }
+
+        .menu ul li {
+            float: left;
+        }
+----------------------------------------------------

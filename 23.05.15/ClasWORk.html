@@ -1,0 +1,49 @@
+﻿<?yml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//UK" 
+
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/StyleSheet1.css" />
+    <script src="jQuery/jquery-2.1.4.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+<body style="background-color:#11043c">
+    <ul class="menu">
+        <li style="background-color: green"><a href="#">HTML</a></li>
+        <li style="background-color: yellow"><a href="#">CSS</a>
+            <ul style="background-color: yellow;">
+                <li><a href="#">One</a></li>
+            </ul>
+        </li>
+        <li style="background-color: red"><a href="#">JavaScript</a>
+            <ul style="background-color: red;">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+            </ul>
+            </li>
+        <li style="background-color: purple"><a href="#">jQuery</a>
+            <ul style="background-color: purple;"><li><a href=#>Text</a></li></ul>
+        </li>
+        <li style="background-color: orange"><a href="#">C++</a></li>
+    </ul>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu li').hover(
+                function(){
+                    $('ul',this).slideDown(700);
+                },
+            function(){
+                $('ul',this).slideUp(700);
+            });
+        });
+               
+
+    </script>
+</body>
+</html>

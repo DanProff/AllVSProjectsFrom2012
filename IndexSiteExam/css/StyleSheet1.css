@@ -1,0 +1,125 @@
+@font-face {
+    font-family: MyShrift; 
+    src: url(../fonts/boldMy.ttf);
+}
+@font-face {
+    font-family: JosefinSlab; 
+    src: url(../fonts/JosefinSlab-SemiBold.ttf);
+}
+@font-face {
+    font-family: OpenSansLight; 
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+body {
+font-family: OpenSansLight,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 18px;
+line-height: 1.42857;
+color: #333;
+margin:0;
+padding:0;
+}
+
+.title {
+margin: 0px;
+padding: 30px 0px 10px;
+font-family: JosefinSlab,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1{
+line-height:0;
+font-size: 50pt;
+font-family: JosefinSlab;
+} 
+
+h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: MyShrift;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.menu {
+line-height: 1.42857;
+font-family: MyShrift;
+letter-spacing: 3px;
+}
+
+.menu ul {
+margin: 0;
+padding: 0;
+}
+
+.menu ul li {
+display:inline-block;
+padding: 30px 0px;
+list-style-type: none;
+}
+.menu ul li a{
+color: #777;
+padding: 30px;
+text-decoration:none;
+margin:0px;
+}
+.content {
+padding:30px;
+margin:auto;
+margin-top:20px;
+overflow: auto;
+}
+.content img{
+clear: both;
+margin-right:25px;
+margin-bottom:25px;
+}
+
+.team {
+padding:30px;
+margin:auto;
+margin-top:20px;
+overflow: auto;
+text-align:center;
+font-family:JosefinSlab;
+}
+
+.team .member {
+margin:auto;
+font-size:20pt;
+display:inline-block;
+padding:5px 20px;
+}
+
+.footer {
+padding:10px;
+margin:0;
+margin-top:20px;
+font-size: 18px;
+overflow: auto;
+}
+
+hr {
+clear:both;
+margin:auto;
+max-width: 400px;
+border-color: #999999;
+}
+
+.id1{
+margin:1px;
+font-size:20px;
+border-radius:7px;
+font-family:myfont1;
+border:1px solid black;
+cursor:pointer;
+background-color:grey;
+color:black;
+box-shadow:rgba(128, 128, 128,.7) 3px 3px 5px ;
+color:white;
+width:130px;
+}
+
+
+@font-face{
+font-family:myfont1;
+src: url(../fonts/boldMy.ttf);
+}

@@ -1,0 +1,46 @@
+.menu {
+    margin: 200px 100px;
+    font-family:'Comic Sans MS';
+}
+
+    .menu, .menu ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+        .menu li {
+            float: left;
+            position: relative;
+            display: block;
+            z-index: 999;
+            width: 200px;
+            border-radius: 3px;
+        }
+
+            .menu li a {
+                display: block;
+                height: 50px;
+                text-decoration: none;
+                text-align: center;
+                padding-top: 12px;
+                color: black;
+                font-weight: bold;
+                font-size: 30px;
+                border: 2px solid black;
+                transition-duration: 2s;
+            }
+
+        .menu ul {
+            position: absolute;
+            display: none;
+            left: 0px;
+        }
+
+        .menu li hover {
+            background-color: black;
+            font-size: 38px;
+        }
+
+        .menu ul li {
+            float: left;
+        }

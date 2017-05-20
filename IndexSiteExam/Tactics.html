@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>:My Counter Strike GO:</title>
+    <link href="css/StyleSheet1.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/icno.png" type="image/x-icon">
+	<style type="text/css">
+	 a:link {color:#FF0000;}
+	 a:visited {color:#00FF00;}
+	 a {text-decoration:none;}
+   </style>
+</head>
+ 
+ <body style="background-image: url(images/bg.jpg);">
+<img src="images/mainicon.png" width="200px"alt="" style="margin:10px; margin-left:50px;float:left;">
+<div class="title" style="height:127px;color: white; text-align: center; ">
+<h1>:My Counter Strike GO:</h1>
+<h2>Сайт про Counter-Strike: Global Offensive</h2>
+</div>
+<div class="menu" style="text-align:center; background: white; height:80px;"> 
+<ul>
+<li><a href="Index.html">ГОЛОВНА</a></li>
+<li><a href="Guides.html">ГАЙДИ</a></li>
+<li><a href="Weapon.html">ЗБРОЯ</a></li>
+<li><a href="Tactics.html">TАКТИКА</a></li>
+<li>
+<div class="id1" id="id1"></div>
+    <script type="text/javascript">
+        var b = setInterval("myfunc()", 1000);
+        function myfunc() {
+            var D = new Date(), a, c, d;
+            a = D.getHours();
+            c = D.getMinutes();
+            d = D.getSeconds();
+            id1.innerText = a + ":" + c + ":" + d;
+        }
+    </script>
+	</li>
+</ul>
+</div>
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/pcTh8-6PV-E" frameborder="0" allowfullscreen></iframe></p>
+<p style="font-family:OpenSans-Light; text-align:center;"><a href="./Index.html">Назад</p>
+
+<div class="footer" style="background: rgba(255, 255, 255, 0.9);"> 
+<p align="center">Copyright &copy; Danylo Pronyuk 2015</p>
+</div>
+</body>
+
+</html>

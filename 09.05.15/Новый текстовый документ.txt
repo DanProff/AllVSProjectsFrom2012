@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+</head>
+<body>
+    <form name="myform">
+        <input type="text" value="Enter your LogIn" name="txt1" size="15" />
+        <input type="password" value="" name="txt2" size="15" />
+    </form>
+    <form name="myform2">
+        <div class="text32" id="idtxt1">
+            <textarea name="txt32" cols="10" rows="10">
+        </textarea>
+        </div>
+        <input type="checkbox" value="Remember me" name="chck1" />Remember me on this computer
+        <br />
+        <input type="checkbox" checked name="chck1" />По замовчуванню натиснута чекбоксина
+        <br />
+        <input type="radio" name="chck1" /><br />
+        <input type="radio" name="chck1" /><br />
+        <input type="radio" name="chck1" /><br />
+        <select name="list1">
+            <option>Text1 </option>
+            <option>Text2 </option>
+            <option>Text3 </option>
+        </select>
+        <select name="list1" size="3">
+            <option>Text1 </option>
+            <option>Text2 </option>
+            <option>Text3 </option>
+        </select>
+        <select name="list1" size="3" multiple>
+            <option>Text1 </option>
+            <option>Text2 </option>
+            <option>Text3 </option>
+        </select> <br />
+        <input type="button" name="butt" value="OK" /><br />
+        <input type="reset" name="resett" value="Delete"/>
+    </form>
+    <script>
+
+
+
+    </script>
+</body>
+</html>
+------------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+</head>
+<body>
+    <form name="myform">
+        Число 1
+        <input type="text" name="sel1" /><br />
+        <br />
+        Знак   
+        <input type="text" name="sel2" />
+        <br />
+        <br />
+        Число 2
+        <input type="text" name="sel3" /><br />
+        <br />
+        Result:
+        <input type="text" name="sel4" />
+        <br />
+        <br />
+        <input type="button" name="sel5" value="Обрахувати" onclick="click1()" /><br />
+    </form>
+    <script>
+        function click1() {
+                switch (myform.sel2.value) {
+                    case '+':
+                        myform.sel4.value = parseInt( myform.sel1.value) + parseInt(myform.sel3.value);
+                        break;
+                    case '-':
+                        myform.sel4.value = parseInt(myform.sel1.value) - parseInt(myform.sel3.value);
+                        break;
+                    case '/':
+                        myform.sel4.value = parseInt(myform.sel1.value) / parseInt(myform.sel3.value);
+                        break;
+                    case '*':
+                        myform.sel4.value = parseInt(myform.sel1.value) * parseInt(myform.sel3.value);
+                        break;
+                
+            }
+        }
+    </script>
+</body>
+</html>
+-----------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+</head>
+<body>
+    <div class="div1" id="div"></div>
+    <form name="myform">
+        R<input type="text" name="s1"/><br /> <br />
+        G<input type="text" name="s2" /><br /> <br />
+        B<input type="text" name="s3" /><br /> <br />
+        <input type="button" name="b1" value="OK" onclick="click1()"/>
+    </form>
+    <script>
+        function click1() {
+            div.style.backgroundColor = "rgb(" + myform.s1.value + "," + myform.s2.value + "," + myform.s3.value + ")";
+        }
+    </script>
+</body>
+</html>
+---------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+</head>
+<body>
+    <div class="div1" id="div"></div>
+    <form name="myform" style="position:relative;">
+        R<input type="text" name="s1"/><br /> <br />
+        G<input type="text" name="s2" /><br /> <br />
+        B<input type="text" name="s3" /><br /> <br />
+        <input type="button" name="b1" value="OK" onclick="click1()" />
+        <div style="position:absolute"; class="div2";>
+        <input type="range" name="r1" min="0" max="255" oninput="on1()" />
+        <input type="range" name="r2" min="0" max="255" oninput="on1()"/>
+        <input type="range" name="r3" min="0" max="255" oninput="on1()"/>
+            </div>
+    </form>
+    <script>
+        function click1() {
+            div.style.backgroundColor = "rgb(" + myform.s1.value + "," + myform.s2.value + "," + myform.s3.value + ")";
+        }
+        function on1() {
+            div.style.backgroundColor = "rgb(" + myform.r1.value + "," + myform.r2.value + "," + myform.r3.value + ")";
+            myform.s1.value = "rgb(" + myform.s1.value + "," + myform.s2.value + "," + myform.s3.value + ")";
+        }
+    </script>
+</body>
+</html>
+------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+</head>
+<body id="b1">
+    <form name="myform" style="position:relative;">
+       <select name="t1" onchange="changec()">
+           <option>green</option>
+           <option>blue</option>
+           <option>red</option>
+           <option>yellow</option>
+           <option>purple</option>
+       </select>
+    </form>
+    <script>
+        function changec() {
+            b1.style.backgroundColor = myform.t1.options[myform.t1.selectedIndex].text;
+        }
+    </script>
+</body>
+</html>
+---------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+</head>
+<body>
+
+    <form name="myform" style="position:relative;">
+        <table>
+
+             <tr > <td colspan="2" style="text-align:center;"> Форма реєстрації </td>   </tr>
+       <tr> <td> Придумайте логін </td>   <td><input type="text" name="login" /></td></tr>
+        <tr> <td>Пароль</td>             <td><input type="password" name="pass" /></td> </tr>
+       <tr> <td>Підтвердіть пароль</td> <td><input type="password" name="passconf" /></td></tr>
+        </table>
+          <p>___________________________________________________________</p>
+          <table>                 
+        <tr> <td> П.І.Б </td>   <td><input type="text" name="login" /></td><td><input type="text" name="login" /></td><td><input type="text" name="login" /></td></tr>
+   <tr><td>Стать:ф</td></tr>
+          
+          </table>
+               </form>
+    <script>
+       
+    </script>
+</body>
+</html>

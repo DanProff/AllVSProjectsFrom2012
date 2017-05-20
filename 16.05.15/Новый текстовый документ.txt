@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ClassWork[16.05.15]</title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+    <script src="jQuery/jquery-2.1.4.js"></script>
+</head>
+<body>
+    <div class="d1" id="d2"></div>
+    <div class="dd">
+        <input type="button" value="Hide"  id="d11" />
+        <input type="button" value="Show"  id="d22" />
+    </div>
+
+
+    <script>
+            $(document).ready(function () {
+                $('#d11').click(function () {
+                    $('#d2').hide(1000)
+                })
+              
+
+                $('#d22').click(function () {
+                    $('#d2').show(1000)
+                })
+            })
+
+    </script>
+</body>
+</html>
+------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ClassWork[16.05.15]</title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+    <script src="jQuery/jquery-2.1.4.js"></script>
+</head>
+<body>
+    <div class="d1" id="d2"></div>
+      
+
+
+    <script>
+        $(document).ready(function () {
+            $('#d2').mouseover(function(){
+                $('#d2').fadeTo(1000,1.0)
+            })
+            $('#d2').mouseout(function(){
+                $('#d2').fadeTo(1000,0.3)
+            })
+
+        })
+
+    </script>
+</body>
+</html>
+CSS:
+.d1 {
+    height:300px;
+    width:300px;
+    background-color:red;
+    border-radius:1000px;
+    border:100px;
+    margin-left:500px;
+    margin-top:300px;
+     position: absolute;
+     opacity:0.3;
+}
+-----------------------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ClassWork[16.05.15]</title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+    <script src="jQuery/jquery-2.1.4.js"></script>
+</head>
+<body>
+    <div class="d1" id="d1"></div>
+    <div class="d2" id="d2"></div>
+    <div class="d3" id="d3"></div>
+    <div class="d4" id="d4"></div>
+
+    <script>
+        $(document).ready(function () {
+            $('div').click(function(){
+                $('div').hide(1000)
+            })
+        })
+
+    </script>
+</body>
+</html>
+CSS:.d1 {
+    height:300px;
+    width:300px;
+    background-color:red;
+    border-radius:1000px;
+    border:100px;
+    margin-left:500px;
+    margin-top:300px;
+     position: absolute;
+     display:inline-block;
+}
+.d2 {
+    height:300px;
+    width:300px;
+    background-color:red;
+    border-radius:1000px;
+    border:100px;
+    margin-left:550px;
+    margin-top:300px;
+     position: absolute;
+     display:inline-block;
+}
+.d3 {
+    height:300px;
+    width:300px;
+    background-color:red;
+    border-radius:1000px;
+    border:100px;
+    margin-left:600px;
+    margin-top:300px;
+     position: absolute;
+     display:inline-block;
+}
+.d4 {
+    height:300px;
+    width:300px;
+    background-color:red;
+    border-radius:1000px;
+    border:100px;
+    margin-left:650px;
+    margin-top:300px;
+     position: absolute;
+     display:inline-block;
+}
+---------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ClassWork[16.05.15]</title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+    <script src="jQuery/jquery-2.1.4.js"></script>
+</head>
+<body>
+    <div class="d1" id="d1"></div>
+    <div class="d2" id="d2"></div>
+    <div class="d3" id="d3"></div>
+    <div class="d4" id="d4"></div>
+
+    <script>
+        $(document).ready(function () {
+            $('div').click(function(){
+                $(this).hide(1000)
+            })
+        })
+
+    </script>
+</body>
+</html>
+CSS:.d1 {
+    height:300px;
+    width:300px;
+    background-color:red;
+    border-radius:1000px;
+    border:100px;
+    margin-left:500px;
+    margin-top:300px;
+     position: absolute;
+     display:inline-block;
+}
+.d2 {
+    height:300px;
+    width:300px;
+    background-color:red;
+    border-radius:1000px;
+    border:100px;
+    margin-left:550px;
+    margin-top:300px;
+     position: absolute;
+     display:inline-block;
+}
+.d3 {
+    height:300px;
+    width:300px;
+    background-color:red;
+    border-radius:1000px;
+    border:100px;
+    margin-left:600px;
+    margin-top:300px;
+     position: absolute;
+     display:inline-block;
+}
+.d4 {
+    height:300px;
+    width:300px;
+    background-color:red;
+    border-radius:1000px;
+    border:100px;
+    margin-left:650px;
+    margin-top:300px;
+     position: absolute;
+     display:inline-block;
+}
+------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ClassWork[16.05.15]</title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+    <script src="jQuery/jquery-2.1.4.js"></script>
+</head>
+<body>
+    <div class="d1" id="d1"></div>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.d1').click(function(){
+                $('.d1').css("height", "30px");
+                $('.d1').css("backgroundColor", "darkred");
+                $('.d1').css("width", "30px");
+            })
+        })
+    </script>
+</body>
+</html>
+CSS:
+.d1 {
+    height:300px;
+    width:300px;
+    background-color:red;
+    border-radius:1000px;
+    border:100px;
+    margin-left:500px;
+    margin-top:300px;
+     position: absolute;
+     display:inline-block;
+}
+
+--------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ClassWork[16.05.15]</title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+    <script src="jQuery/jquery-2.1.4.js"></script>
+</head>
+<body>
+    <div style="position: relative;">
+        <div class="d1" id="d1" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d2" id="d2" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d3" id="d3" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d4" id="d4" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d5" id="d5" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d6" id="d6" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d7" id="d7" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d8" id="d8" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d9" id="d9" style="position: absolute;"></div>
+    </div>
+    <div style="position: relative;">
+        <div class="d10" id="d10" style="position: absolute;"></div>
+    </div>
+
+
+    <script>
+        setInterval('func1()', 1000);
+        function func1() {
+            $(document).ready(function () {
+                $('#d1').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d2').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d3').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d4').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d5').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d6').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d7').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d8').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d9').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+                $('#d10').slideUp(Math.floor((Math.random() * 2000))).slideDown((Math.floor((Math.random() * 2000))))
+            })
+
+        }
+                
+    </script>
+</body>
+</html>
+CSS:
+.d1 {
+    height: 300px;
+    width: 100px;
+    background-color: red;
+    bottom:-300px;
+}
+
+.d2 {
+    height: 300px;
+    width: 100px;
+    background-color: green;
+    margin-left: 100px;
+    bottom:-300px;
+}
+
+.d3 {
+    height: 300px;
+    width: 100px;
+    background-color: blue;
+    margin-left: 200px;
+    bottom:-300px;
+}
+
+.d4 {
+    height: 300px;
+    width: 100px;
+    background-color: yellow;
+    margin-left: 300px;
+    bottom:-300px;
+}
+
+.d5 {
+    height: 300px;
+    width: 100px;
+    background-color: purple;
+    margin-left: 400px;
+    bottom:-300px;
+}
+
+.d6 {
+    height: 300px;
+    width: 100px;
+    background-color: darkred;
+    margin-left: 500px;
+    bottom:-300px;
+}
+
+.d7 {
+    height: 300px;
+    width: 100px;
+    background-color: red;
+    margin-left: 600px;
+    bottom:-300px;
+}
+
+.d8 {
+    height: 300px;
+    width: 100px;
+    background-color: green;
+    margin-left: 700px;
+    bottom:-300px;
+}
+
+.d9 {
+    height: 300px;
+    width: 100px;
+    background-color: blue;
+    margin-left: 800px;
+    bottom:-300px;
+}
+
+.d10 {
+    height: 300px;
+    width: 100px;
+    background-color: yellow;
+    margin-left: 900px;
+    bottom:-300px;
+}
+-----------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ClassWork[16.05.15]</title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+    <script src="jQuery/jquery-2.1.4.js"></script>
+</head>
+<body>
+    <div id="d1" style="position:absolute;"></div>
+
+
+    <script>
+        
+        $(document).ready(function () {
+            $(document).keydown(function (key) {
+                switch (parseInt(key.which,10)){
+                    case 37:
+                        $('div').animate({left:'-=10px'},1)
+                        break;
+                    case 40:
+                        $('div').animate({top:'+=10px'},1)
+                        break;
+                    case 39:
+                        $('div').animate({left:'+=10px'},1)
+                        break;
+                    case 38:
+                        $('div').animate({top:'-=10px'},1)
+                        break;
+                }
+            }
+        )})
+            
+
+                
+    </script>
+</body>
+</html>
+CSS:
+#d1 {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+}
+--------------------------------------------------------------------------
